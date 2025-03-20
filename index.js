@@ -5,10 +5,11 @@
 
 
 document.addEventListener("DOMContentLoaded", async () => {
+    
     const container = document.getElementById("products-container");
 
     // Fetching dummy products
-    const response = await fetch("https://dummyjson.com/products?limit=1000");
+    const response = await fetch("https://dummyjson.com/products?limit=100");
     const data = await response.json();
     const products = data.products;
 
